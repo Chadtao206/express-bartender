@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Express Bartender</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly - v1.1.0
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+  <script defer src="assets/js/signout.js"></script>
+
+  <!-- js code for user recipes section -->
+  <script defer src="assets/js/recipes.js"></script>
+</head>
+
+<body>
+
+  <!-- signout button - for testing purposes - move this to wherever -->
+  <button type="button" id="signout" style="background-color:#cda45e"; font-family: Open Sans, sans-serif; font-size: 14px;>Sign Out</button>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">Express Bartender</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Cocktails</a></li>
+          <li><a href="#specials">Non-Alcoholic</a></li>
+          <li><a href="#events">Spirit Guide</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#mixologists">Mixologists</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+
+          <li class="book-a-table text-center"><a href="#recipe-form">Add Your Own Drink!</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>Express Bartender</span></h1>
+          <h2>Become your own bartender in seconds</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Cocktails</a>
+            <a href="#user-recipe-container" class="btn-book animated fadeInUp scrollto">Add your own!</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=Uqs58Mt0pNU" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="https://prods3.imgix.net/images/articles/2017_05/nonfeatured-essential-liquors-home-bar.jpg" alt="man pouring drink">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>We'll help you become your own mixologist in the comfort of your home!</h3>
+            <p class="font-italic">
+              You can find your favorite alcoholic and non-alcoholic cocktails on Express Bartender. Just input your drink of choice or submit one of your own! We'll provide you with a wide variety of options to quench your thirst.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Users can search for a cocktail based on the name, main ingredient or alcohol preference they may already have on-hand.</li>
+              <li><i class="icofont-check-circled"></i> Discover and make new drinks!</li>
+              <li><i class="icofont-check-circled"></i> A special feature we added includes the user being able to enter their own drink into a database and store for future reference.</li>
+            </ul>
+            <p>
+              Our web application is designed to provide the user with a way to search for alcoholic and non-alcoholic cocktails that they are familiar with since our local bars are currently closed. Once you identify a cocktail of choice, 
+              we provide the ingredients and recipes to make your favorite drink from the comfort of your own home!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Cocktails</h2>
+          
+          <p>Pick Your Poison</p>
+          <input id="Search">
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li class="drinkTab" id="drinks">All Drinks</li>
+              <li class="drinkTab" id="vodka">Vodka</li>
+              <li class="drinkTab" id="whiskey">Whiskey</li>
+              <li class="drinkTab" id="rum">Rum</li>
+              <li class="drinkTab" id="tequila">Tequila</li>
+              <li class="drinkTab" id="gin">Gin</li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+          </div>
+          <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal hide fade" id="drinkDetailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+    <!-- ======= All The Flavor Without The Spirit Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Non-Alcoholic Cocktails</h2>
+          <p>All the flavor without the Spirit</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" id="tabhead1" data-toggle="tab" href="#tab-1"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tabhead2" data-toggle="tab" href="#tab-2"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tabhead3" data-toggle="tab" href="#tab-3"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tabhead4" data-toggle="tab" href="#tab-4"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tabhead5" data-toggle="tab" href="#tab-5"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                
+              </div>
+              <div class="tab-pane" id="tab-2">
+                
+              </div>
+              <div class="tab-pane" id="tab-3">
+                
+              </div>
+              <div class="tab-pane" id="tab-4">
+               
+              </div>
+              <div class="tab-pane" id="tab-5">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End All The Flavor Without The Spirit Section -->
+
+    <!-- ======= Spirit Guide Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Spirit Guide</h2>
+          <p>Getting to know your liquor</p>
+        </div>
+
+        <div class="owl-carousel events-carousel" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="https://images2.alphacoders.com/115/thumb-1920-115702.jpg" class="img-fluid" alt="various vodka bottles">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Vodka</h3>
+              <div class="price">
+                <p><span></span></p>
+              </div>
+              <p class="font-italic">
+                Varieties originated in Russia, Poland, and Sweden.
+              </p>
+              <ul>
+                <li><i class="icofont-check-circled"></i> Traditionally made by fermenting the distilled liquid from cereal grains.</li>
+                <li><i class="icofont-check-circled"></i> Current distillers use potatoes and/or fruit as the base liquid.</li>
+                <li><i class="icofont-check-circled"></i> Typically consumed neat and served freezer chilled.</li>
+              </ul>
+              <cite>Source: wikipedia.org</cite>
+            </div>
+          </div>
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="https://d384u2mq2suvbq.cloudfront.net/public/spree/products/1376/original/Whiskey_Fragrance_Oil.jpg?1486557222" class="img-fluid" alt="whiskey in a glass with ice">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Whiskey</h3>
+              
+              <p class="font-italic">
+                The birthplace of American whiskey can be traced back to Virginia, Maryland and Pennsylvania. In 1791, whiskey
+                began to be brewed as a rye based product. 
+              </p>
+              <ul>
+                <li><i class="icofont-check-circled"></i> Corn, the main ingredient of whiskey, making up 51% of its ingredients, was plentiful in its origin areas.</li>
+                <li><i class="icofont-check-circled"></i> Divided into two common brands: sour mash and bourbon.</li>
+                <li><i class="icofont-check-circled"></i> In 1897, the "Bottled In Bond" Act was passed into law stating that whiskey must be straight (50% alcohol by volume) and produced by one distillation season under one distiller and on the grounds of one distillery.</li>
+                <li><i class="icofont-check-circled"></i> It also must have been stored in a federally bonded warehouse under the supervision of the U.S. Government for at least four years. This bonded whiskey still holds a reputation for being the best of the best.</li>
+              </ul>
+              </ul>
+              <cite>Source: homewetbar.com</cite>
+              <!-- <p>
+                Some brands of American whiskey that have stood the test of time include Jim Beam, Maker’s Mark, Wild Turkey, and Eagle Rare. 
+                Distilleries in Kentucky, Tennessee and Virginia are open for tours and tastings to allow the public to experience the origins of true American whiskey.
+              </p> -->
+            </div>
+          </div>
+          
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="https://www.saveur.com/resizer/Yk3YlL3uUal0CpESkvM9lZg0sT8=/760x570/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/UCBPUNDT7QDGSRMDV572QEKZMQ.jpg" class="img-fluid" alt="Various Gin Brands and bottles">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Gin</h3>
+             
+              <p class="font-italic">
+                Gin, in its most basic terms, is a liquor of approximately 40% alcohol by volume (80 proof) or greater that is 
+                derived from grain distillation and primarily flavored with juniper berries (or juniper extract).
+              </p>
+              <ul>
+                <li><i class="icofont-check-circled"></i> Gin was originally produced as a medicine distributed by “chemists” for the treatment of ailments such as gout and dyspepsia..</li>
+                <li><i class="icofont-check-circled"></i> Certain types of gin can be enjoyed neat or on the rocks, or blended in a cocktail.</li>
+                <li><i class="icofont-check-circled"></i> Many distilleries have been producing the same type of gin since the early 1700s.</li>
+              </ul>
+              <cite>Source: themanual.com</cite>
+            </div>
+          </div>
+      <div class="row event-item">
+        <div class="col-lg-6">
+          <img src="https://i.dmarge.com/2019/02/don.jpg" class="img-fluid" alt="Don Julio tequila bottle">
+        </div>
+      <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Tequila</h3>
+              
+              <p class="font-italic">
+                Tequila is made from the blue agave plant, primarily in the Jaliscan Highlands of central western Mexico.  Mexican laws state that tequila can only be produced in the state of Jalisco and limited municipalities in the states of Guanajuato, Michoacan, Nayarit, and Tamaulipas.
+              </p>
+              <ul>
+                <li><i class="icofont-check-circled"></i> Tequila is commonly served neat in Mexico and as a shot with salt and lime in the rest of  the world.</li>
+                <li><i class="icofont-check-circled"></i> It is known for its sweet, fruity , and earthy flavor.</li>
+                <li><i class="icofont-check-circled"></i> Tequila must have between 35% and 55% alcohol content (70-110 US proof).  It must contain at least 40% (80 US proof) alcohol to be sold in the US and Canada.</li>
+              </ul>
+              </ul>
+              <cite>Source: wikipedia.org</cite>
+            </div>
+          </div>
+          <div class="row event-item">
+              <div class="col-lg-6">
+                <img src="https://s3-us-west-2.amazonaws.com/distiller-blog-prod/wp-content/uploads/2018/04/13130412/bacardi1.jpg" class="img-fluid" alt="Bacardi Rum bottle">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Rum</h3>
+                
+                <p class="font-italic">
+                  Rum is made by fermenting and then distilling sugarcane molasses or sugarcane juice, traditionally aged in oak barrels. 
+                </p>
+                <ul>
+                  <li><i class="icofont-check-circled"></i> Most rums are made in the Caribbean, and North and South America.</li>
+                  <li><i class="icofont-check-circled"></i> Rums are produced in various grades, with light rums commonly used in cocktails, where golden and dark rums are served neat, straight, on the rocks, or used in cooking.</li>
+                  <li><i class="icofont-check-circled"></i> The alcohol concentration of rum can range from 20%, as in coconut rum, 40% most commonly, and 75.5%, like in Bacardi 151.</li>
+                  <li><i class="icofont-check-circled"></i> Some of the popular drinks containing rum are: The Daiquiri, Mojito, Pina Colada, and Cuba Libre.</li>
+                </ul>
+                </ul>
+                <cite>Source: wikipedia.org</cite>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section><!-- End Events Section -->
+
+
+    <!-- ======= Submit Your Own Drink ======= -->
+    
+
+
+    <div class='container' id='user-recipe-container'>
+
+      <div class='save-indicator'></div>
+      <section id='user-recipe-section'>
+  
+      </section>
+      <section class='row'>
+        <div class=col-md-12>
+          <form id="recipe-form">
+            <div class="form-group">
+              <label for="drink-name"><strong>Cocktail Name</strong></label>
+              <input type="text" class="form-control recipe-inputs dark-recipe-inputs" id="drink-name">
+            </div>
+  
+            <div class="form-group form-check">
+              <input type="checkbox" class="recipe-inputs form-check-input" id="drink-alcoholic">
+              <label class="form-check-label" for="alcoholic"><strong>alcoholic Drink?</strong></label>
+            </div>
+  
+            <div id="drink-type-checkboxes">
+              <div class="form-group form-check">
+                <input type="checkbox" class="recipe-inputs form-check-input" id="drink-rum">
+                <label class="form-check-label" for="rum"><strong>Rum Drink?</strong></label>
+              </div>
+  
+              <div class="form-group form-check">
+                <input type="checkbox" class="recipe-inputs form-check-input" id="drink-whiskey">
+                <label class="form-check-label" for="whiskey"><strong>Whiskey Drink?</strong></label>
+              </div>
+  
+              <div class="form-group form-check">
+                <input type="checkbox" class="recipe-inputs form-check-input" id="drink-tequila">
+                <label class="form-check-label" for="tequila"><strong>Tequila Drink?</strong></label>
+              </div>
+  
+              <div class="form-group form-check">
+                <input type="checkbox" class="recipe-inputs form-check-input" id="drink-vodka">
+                <label class="form-check-label" for="vodka"><strong>Vodka Drink?</strong></label>
+              </div>
+  
+              <div class="form-group form-check">
+                <input type="checkbox" class="recipe-inputs form-check-input" id="drink-gin">
+                <label class="form-check-label" for="gin"><strong>Gin Drink?</strong></label>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="drink-recipe"><strong>Measurements</strong></label>
+              <input type="text" class="recipe-inputs form-control dark-recipe-inputs" id="drink-recipe">
+            </div>
+  
+            <div class="form-group">
+              <label for="drink-instructions"><strong>Instructions</strong></label>
+              <textarea type="text" class="recipe-inputs form-control dark-recipe-inputs" id="drink-instructions"></textarea>
+            </div>
+  
+            <div class="form-group">
+              <label for="drink-glass"><strong>Glass</strong></label>
+              <input type="text" class="recipe-inputs form-control dark-recipe-inputs" id="drink-glass">
+            </div>
+           
+            <button type="submit" id="submit-recipe" class="btn btn-outline-warning">Submit a new cocktail</button>
+          </form>
+          <a href='#user-recipe-container'><button type=button id=view-my-drinks class="btn btn-outline-warning">View all my recipes posted</button></a>
+          <button type="button" id='update-current-recipe' class="btn btn-outline-warning" style="background-color: #cda45e;">Update the recipe</button>
+        </div>
+      </section>
+  
+      
+      
+          
+      
+      <!-- <section class='row'>
+        <div class='col-md-12'>
+          <a href='#user-recipe-container'><button type=button id=view-my-drinks class="btn btn-outline-warning">View all my recipes posted</button></a>
+          <button type="button" id='update-current-recipe' class='btn btn-secondary' style="background-color: #cda45e;"></button>
+        </div>
+      </section> -->
+  
+    </div>
+
+
+    <!-- <section id="book-a-table" class="book-a-table">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Submit Your Own</h2>
+          <p>Add your original recipe to the Express Bartender database</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="form-row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Drink Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Liquor" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" class="form-control" name="time" id="time" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="number" class="form-control" name="people" id="people" placeholder="" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Enter your recipe here"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Submit Your Drink</button></div>
+        </form>
+
+      </div>
+
+    </section>
+ Submit Your Own Drink Section -->
+
+  
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+
+              After a long day working from home, I needed a cocktail to celebrate my new show on OWN. I logged onto Express Bartender and found the recipe for a Pink Champagne Margarita! I had the recipe right at my fingertips and started the weekend off right!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="https://i.pinimg.com/originals/de/ae/89/deae89bdec301e44767460259e01b0b3.jpg" class="testimonial-img" alt="Oprah holding a drink">
+            <h3>Oprah Winfrey</h3>
+            <h4>Ceo &amp; Television Personality</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              On my trip to Vegas, I needed a pick me up after spending a long week being a TA for my bootcamp class. 
+              I had no idea what to make so I used Express Bartender to bring the party to me!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="/assets/img/Wilson_Testimonial section.jpg" class="testimonial-img" alt="Wilson testimonial">
+            <h3>Wilson Lam</h3>
+            <h4>Web Developer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              While my wife and I were stuck at home, I used Express Bartender to whip up a quick drink for my wife. I made a Negroni and surprised my wife. 
+              She loves it !
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-04-29-at-5-48-17-pm-1588196912.png?crop=1xw:0.8988095238095238xh;center,top&resize=480:*" class="testimonial-img" alt="stanley tucci">
+            <h3>Stanley Tucci</h3>
+            <h4>Actor</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Express Bartender saved the day for New Years Eve. We were able to find a recipe including champagne to ring in the new year!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="https://www.essence.com/wp-content/uploads/2018/12/GettyImages-115620969-1122x1496.jpg?width=840&height=1120" class="testimonial-img" alt="African Amercian woman celebrating">
+            <h3>Brittany Stephens</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Spirits For Any Occasion</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://cdn.vox-cdn.com/thumbor/LilsyFAEeapBGIE1EzCsGVTPPCs=/0x0:4032x3024/1200x900/filters:focal(1694x1190:2338x1834)/cdn.vox-cdn.com/uploads/chorus_image/image/60718189/C20205ED_9B49_48D6_8266_C6A7B321558F.0.jpeg" class="venobox" data-gall="gallery-item">
+                <img src="https://cdn.vox-cdn.com/thumbor/LilsyFAEeapBGIE1EzCsGVTPPCs=/0x0:4032x3024/1200x900/filters:focal(1694x1190:2338x1834)/cdn.vox-cdn.com/uploads/chorus_image/image/60718189/C20205ED_9B49_48D6_8266_C6A7B321558F.0.jpeg" alt="non alcoholic cocktail on table" class="img-fluid" style="height: 275px">
+
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://miro.medium.com/max/4096/1*TsnSSqjZJh_kvvyZWbcyVQ.jpeg" class="venobox" data-gall="gallery-item">
+                <img src="https://miro.medium.com/max/4096/1*TsnSSqjZJh_kvvyZWbcyVQ.jpeg" alt="Black Girl Magic wine" class="img-fluid" style="height: 275px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://thumbor.thedailymeal.com/725MgASouZj4xZmu06lY8bojz1o=//https://www.thedailymeal.com/sites/default/files/story/2018/iStock-692856274.jpg" class="venobox" data-gall="gallery-item">
+                <img src="https://thumbor.thedailymeal.com/725MgASouZj4xZmu06lY8bojz1o=//https://www.thedailymeal.com/sites/default/files/story/2018/iStock-692856274.jpg" alt="shots with lime" class="img-fluid" style="height: 275px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://www.thedrinkblog.com/wp-content/uploads/2014/11/tdb-chocolate-martini18.jpg" class="venobox" data-gall="gallery-item">
+                <img src="https://www.thedrinkblog.com/wp-content/uploads/2014/11/tdb-chocolate-martini18.jpg" alt="Godiva chocolate martini" class="img-fluid" id="godiva">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://www.walletjoy.com/wp-content/uploads/2020/03/GettyImages-866909982-scaled.jpg" class="venobox" data-gall="gallery-item">
+                <img src="https://www.walletjoy.com/wp-content/uploads/2020/03/GettyImages-866909982-scaled.jpg" alt="champagne flutes" class="img-fluid" style="height: 275px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://i0.wp.com/socialifestylemag.com/wp-content/uploads/2016/09/casa-del-mar_los-angeles.jpg?w=624&ssl=1" class="venobox" data-gall="gallery-item">
+                <img src="https://i0.wp.com/socialifestylemag.com/wp-content/uploads/2016/09/casa-del-mar_los-angeles.jpg?w=624&ssl=1" alt="santa monica pier and table" class="img-fluid" style="height: 276px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://cdn2.justwineapp.com/assets/article/2018/05/Berry-Beer-Sangria-Strip.jpg" class="venobox" data-gall="gallery-item">
+                <img src="https://cdn2.justwineapp.com/assets/article/2018/05/Berry-Beer-Sangria-Strip.jpg" alt="sangria by pool" class="img-fluid" style="height: 275px"> 
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://image.freepik.com/free-photo/close-up-people-toasting-party_23-2148232030.jpg" class="venobox" data-gall="gallery-item">
+                <img src="https://image.freepik.com/free-photo/close-up-people-toasting-party_23-2148232030.jpg" alt="people toasting with drinks" class="img-fluid" style="height: 276px;">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Mixologist Section ======= -->
+    <section id="mixologists" class="mixologists">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Mixologists</h2>
+          <p>Our Professional Mixologists</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="https://ocbarchix.weebly.com/uploads/4/1/6/4/41641021/s885452435921408554_p1_i1_w569.jpeg" class="img-fluid" alt="African American woman bartending" id="tracy-boseman">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Tracy Boseman</h4>
+                  <span>Master Mixologist</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="https://i.insider.com/5d1f6b59a17d6c32b97f930a?width=1100&format=jpeg&auto=webp" class="img-fluid" alt="female at the bar pouring drink">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Abby Fallon</h4>
+                  <span>Lead Mixologist</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/3/2020/03/06181742/female-bartenders-bangkok-1-copy-806x583.jpg" class="img-fluid" alt="Asian female bartender">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Lucy Lam</h4>
+                  <span>Senior Mixologist</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Mixologist Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <!-- <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div> -->
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>2 Westwood Blvd, Los Angeles, CA 90095</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="icofont-clock-time icofont-rotate-90"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@expressbartender.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 310 555-5555</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="mailto:expressBartender@theFakestDomain.com" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Express Bartender</h3>
+              <p>
+                2 Westwood Blvd <br>
+                CA 90095, USA<br><br>
+                <strong>Phone:</strong> +1 310 555-5555<br>
+                <strong>Email:</strong> expressbartender@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div> -->
+
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div> -->
+         
+      
+         <div class="row">
+            <div class="col-lg-4 col-md-6 footer-address and picture">
+                <img src="https://data.thefeedfeed.com/recommended/post_4013065.jpg" height="250px"/>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-address and picture">
+              <img src="https://i.pinimg.com/originals/95/7e/a6/957ea672211a3a4015668d908257a639.gif" height="250px" width="250px" style= "width: 100%"/>
+            </div>
+            
+          </div>
+        <!-- <div class="col-lg-4 col-md-6 footer-address and picture"> -->
+    
+            <!-- <h4>Our Newsletter</h4>
+            <p>Stay up to date on new recipes submitted by our users</p> -->
+            <!-- <img src="https://data.thefeedfeed.com/recommended/post_4013065.jpg" height="250px"/> -->
+    
+            <!-- <a href="https://data.thefeedfeed.com/recommended/post_4013065.jpg" atl="smokey manhattan cocktail"></a> -->
+            <!-- <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form> -->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2020 <strong><span>Express Bartender</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a target="_blank" href="https://chadtao206.github.io/dev_portfolio/">Chad Tao Design</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script defer src="assets/js/main.js"></script>
+  <script src="assets/js/api.js"></script>
+</body>
+
+</html>
