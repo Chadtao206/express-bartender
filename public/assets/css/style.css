@@ -1916,6 +1916,13 @@ background: linear-gradient(0deg, darkgreen 20%, rgba(18, 150, 173, 0.4) 55%, pu
   display: none;
 }
 
+*::-webkit-scrollbar{
+  display:none;
+}
+*{
+  scrollbar-width: none;
+}
+
 .flip-back::-webkit-scrollbar {
   display: none;
 }
